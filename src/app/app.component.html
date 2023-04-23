@@ -1,0 +1,7 @@
+<div class="container">
+    <app-menu [closeBtn]="closeBtnPrntClass" ></app-menu>
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+    <app-right (messageEvent)="receiveMessage($event)" ></app-right>
+</div>

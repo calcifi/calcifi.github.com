@@ -1,0 +1,36 @@
+<aside *ngIf="closeBtn">
+    <div class="top">
+        <div class="logo">
+            <img src="./assets/images/logo-black.png">
+            <h2>CALCI<span class="danger">FI </span></h2>
+        </div>
+        
+        <div class="close" id="close-btn" >
+            <span (click)="closeMenu()" class="material-symbols-rounded" >
+                close
+            </span>
+        </div>
+    </div>
+    <div class="sidebar">
+        <a href="#" routerLink="/"> <span class="material-symbols-rounded">dashboard</span>
+            <h3>Dashboard</h3>
+        </a>
+        <a href="#" class="active" routerLink="/home-loan"> <span class="material-symbols-rounded">calculate</span>
+            <h3>Home Loan</h3>
+        </a>
+        <a href="#" routerLink="/flat-vs-bank"> <span class="material-symbols-rounded">calculate</span>
+            <h3>Flat Rate VS Bank EMI</h3>
+        </a>
+        <a href="#"> <span class="material-symbols-rounded">face</span>
+            <h3>Bank EMI</h3>
+        </a>
+        <a href="#"> <span class="material-symbols-rounded">face</span>
+            <h3>Messages</h3>
+            <span class="message-count">26</span>
+        </a>
+        <a href="#"> <span class="material-symbols-rounded">logout</span>
+            <h3>Logout</h3>
+        </a>
+
+    </div>
+</aside>
