@@ -7,7 +7,8 @@ import { FlatVsBankComponent } from './flat-vs-bank/flat-vs-bank.component';
 
 
 const routes: Routes = [
-  { path: '',redirectTo:'dashboard', pathMatch:'full' },
+  /* { path: '',redirectTo:'dashboard', pathMatch:'full' }, */
+  { path: '',component: DashboardComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'flat-vs-bank', component: FlatVsBankComponent },
   { path: 'home-loan', component: HomeLoanComponent },
